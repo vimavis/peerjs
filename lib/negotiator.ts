@@ -143,7 +143,7 @@ export class Negotiator {
       const stream = evt.streams[0];
       const connection = provider.getConnection(peerId, connectionId);
 
-      if (connection.type === ConnectionType.Media) {
+      if (connection.type === ConnectionType.Media && stream) {
         const mediaConnection = <MediaConnection>connection;
 
         this._addStreamToMediaConnection(stream, mediaConnection);

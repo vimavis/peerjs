@@ -8001,7 +8001,7 @@ function () {
       var stream = evt.streams[0];
       var connection = provider.getConnection(peerId, connectionId);
 
-      if (connection.type === enums_1.ConnectionType.Media) {
+      if (connection.type === enums_1.ConnectionType.Media && stream) {
         var mediaConnection = connection;
 
         _this._addStreamToMediaConnection(stream, mediaConnection);

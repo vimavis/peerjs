@@ -1,6 +1,6 @@
 {
   "name": "peerjs-with-transceiver",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "PeerJS client",
   "main": "./dist/peerjs.min.js",
   "homepage": "https://github.com/peers/peerjs#readme",
